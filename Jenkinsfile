@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo 'mvn test' 
             }
-        stage('Clean') { 
+        stage('Deploy') { 
             steps {
                 sh 'mvn clean' 
             }
