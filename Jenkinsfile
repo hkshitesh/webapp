@@ -12,6 +12,10 @@ pipeline {
             steps {
                 echo 'mvn test' 
             }
+        stage('Clean') { 
+            steps {
+                sh 'mvn clean' 
+            }
             post {
                 always {
                     echo 'mvn test'
